@@ -1,21 +1,4 @@
-﻿<?php
-
-if($_POST["submit"]) {
-    $recipient="bkheil01@louisville.edu";
-    $subject="Form to email message";
-    $sender=$_POST["sender"];
-    $senderEmail=$_POST["senderEmail"];
-    $message=$_POST["message"];
-
-    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
-
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderemail>
-    ");
-
-    $thankYou="<p>Thank you! Your message has been sent.</p>";
-    }
-
-    ?><!DOCTYPE HTML>
+<!DOCTYPE HTML>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -30,7 +13,6 @@ if($_POST["submit"]) {
         <link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
         <link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
         <link href="assets/css/animate.css" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
 
         <!-- Custom styles CSS -->
         <link href="assets/css/style.css" rel="stylesheet" media="screen">
@@ -510,8 +492,5 @@ if($_POST["submit"]) {
         <script src="assets/js/waypoints.min.js"></script>
         <script src="assets/js/jquery.cbpQTRotator.js"></script>
         <script src="assets/js/custom.js"></script>
-        <script src="jquery-2.1.0.min.js"></script>
-        <script src="app.js"></script>
-
     </body>
 </html>
