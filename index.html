@@ -423,65 +423,46 @@
         <!-- Testimonial end -->
         <!-- Contact start -->
 
-        <section id="contact" class="pfblock">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-sm-6 col-sm-offset-3">
-
-                        <div class="pfblock-header">
-                            <h2 class="pfblock-title">Drop me a line</h2>
-                            <div class="pfblock-line"></div>
-                            <div class="pfblock-subtitle">
-                                Here is my email: bkheil01@louisville.edu
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div><!-- .row -->
-
-                <div class="row">
-
-                    <div class="col-sm-6 col-sm-offset-3">
-                        <form name="htmlform" method="post" action="html_form_send.php">
-                            <div class="field">
-                                <div class="form-group wow fadeInUp">
-                                    <label for="first_name">First Name</label>
-                                    <input type="text" name="first_name" placeholder="First Name">
-                                </div>
-                            </div>
-                            
-                            <div class="field">
-                                <div class="form-group wow fadeInUp">
-                                    <label for="last_name">Last Name</label>
-                                    <input type="text" name="last_name" placeholder="Last Name">
-                                </div>
-                            </div>
-                            
-                            <div class="field">
-                                <div class="form-group wow fadeInUp" data-wow-delay=".1s">
-                                    <label for="email">Email</label>
-                                    <input type="email" name="email" placeholder="E-mail">
-                                </div>
-                            </div>
-                            
-                            <div class="field"></div>
-                                <div class="form-group wow fadeInUp" data-wow-delay=".2s">
-                                    <textarea name="comments" maxlength="1000" rows="7" placeholder="Message"></textarea>
-                                </div>
-                            </div>
-                            
-                            <div class="field">
-                                <button type="submit" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s">Send Message</button>
-                            </div>
-                        </form>
-
-                    </div>
-
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </section>
+<form class="form-horizontal" role="form" method="post" action="index.php">
+    <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">Name</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+            <?php echo "<p class='text-danger'>$errName</p>";?>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+            <?php echo "<p class='text-danger'>$errEmail</p>";?>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="message" class="col-sm-2 control-label">Message</label>
+        <div class="col-sm-10">
+            <textarea class="form-control" rows="4" name="message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
+            <?php echo "<p class='text-danger'>$errMessage</p>";?>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+            <?php echo "<p class='text-danger'>$errHuman</p>";?>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <?php echo $result; ?>    
+        </div>
+    </div>
+</form> 
 
         <!-- Contact end -->
         <!-- Footer start -->
