@@ -43,6 +43,8 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 <!DOCTYPE HTML>
     <html lang="en">
     <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="BootstrapBay.com">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
@@ -56,6 +58,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
         <link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
         <link href="assets/css/animate.css" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
         <!-- Custom styles CSS -->
         <link href="assets/css/style.css" rel="stylesheet" media="screen">
@@ -464,7 +467,6 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
         </section>-->
         <!-- Testimonial end -->
         <!-- Contact start -->
-        <section id="contact" class="pfblock">
             <div class="container">
                 <div class="row">
                     
@@ -510,7 +512,6 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 </form> 
 </div><!-- .row -->
             </div><!-- .container -->
-        </section>
         <!-- Contact end -->
         <!-- Footer start -->
 
