@@ -365,7 +365,26 @@
                     <div class="col-md-12 col-lg-12">
                         <h2 class="wow slideInRight" data-wow-delay=".1s">I'M READY TO START MY FUTURE!</h2>
                         <div class="calltoaction-decription wow slideInRight" data-wow-delay=".2s">
-                            Send me an email: bkheil01@louisville.edu
+                            <div class="form-top">
+                                <p>Fill in the form below to send me a message:</p>
+                            </div>
+                            <div class="form-bottom contact-form">
+                                <form role="form" action="http://formspree.io/bkheil01@louisville.edu" method="POST">
+                                    <div class="form-group">
+                                        <label class="sr-only" for="contact-email">Email</label>
+                                        <input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="contact-subject">Subject</label>
+                                        <input type="text" name="subject" placeholder="Subject..." class="contact-subject form-control" id="contact-subject">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="contact-message">Message</label>
+                                        <textarea name="message" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn">Send message</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
 
@@ -419,37 +438,17 @@
         </section>-->
         <!-- Testimonial end -->
         <!-- Contact start -->
-<div class="top-content">
+        <!--<div class="top-content">
     <div class="inner-bg">        
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-sm-offset-3 form-box">
-                            <div class="form-top">
-                                <h3>Contact us</h3>
-                                <p>Fill in the form below to send me a message:</p>
-                            </div>
-                            <div class="form-bottom contact-form">
-                                <form role="form" action="http://formspree.io/bkheil01@louisville.edu" method="POST">
-                                    <div class="form-group">
-                                        <label class="sr-only" for="contact-email">Email</label>
-                                        <input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="sr-only" for="contact-subject">Subject</label>
-                                        <input type="text" name="subject" placeholder="Subject..." class="contact-subject form-control" id="contact-subject">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="sr-only" for="contact-message">Message</label>
-                                        <textarea name="message" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
-                                    </div>
-                                    <button type="submit" class="btn">Send message</button>
-                                </form>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>    
             </div><!-- .row -->
-        </div><!-- .container -->
+<!-- .container -->
         <!-- Contact end -->
         <!-- Footer start -->
 
