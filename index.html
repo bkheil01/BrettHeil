@@ -5,8 +5,6 @@
         <meta name="author" content="BootstrapBay.com">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
 
         <title>Welcome to Brett Heil's Webpage</title>
 
@@ -421,12 +419,41 @@
         </section>-->
         <!-- Testimonial end -->
         <!-- Contact start -->
-            <div class="container">
-                <div class="row">
-                    
-
-</div><!-- .row -->
-            </div><!-- .container -->
+<div class="top-content">
+    <div class="inner-bg">        
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3 form-box">
+                            <div class="form-top">
+                                <h3>Contact us</h3>
+                                <p>Fill in the form below to send me a message:</p>
+                            </div>
+                            <div class="form-bottom contact-form">
+                                <form role="form" action="assets/contact.php" method="post">
+                                    <div class="form-group">
+                                        <label class="sr-only" for="contact-email">Email</label>
+                                        <input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="contact-subject">Subject</label>
+                                        <input type="text" name="subject" placeholder="Subject..." class="contact-subject form-control" id="contact-subject">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="contact-message">Message</label>
+                                        <textarea name="message" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contact-antispam">Antispam question: 7 + 5 = ?</label>
+                                        <input type="text" name="antispam" placeholder="Your answer..." class="contact-antispam form-control" id="contact-antispam">
+                                    </div>
+                                    <button type="submit" class="btn">Send message</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div><!-- .row -->
+        </div><!-- .container -->
         <!-- Contact end -->
         <!-- Footer start -->
 
@@ -465,6 +492,8 @@
 
         <script src="assets/js/jquery-1.11.1.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
         <script src="assets/js/jquery.parallax-1.1.3.js"></script>
         <script src="assets/js/imagesloaded.pkgd.js"></script>
         <script src="assets/js/jquery.sticky.js"></script>
